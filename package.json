@@ -19,7 +19,12 @@
   },
   "homepage": "https://github.com/mick842/cards-catalog-client#readme",
   "devDependencies": {
+    "babel-core": "^6.24.0",
+    "babel-preset-env": "^1.2.2",
     "webpack": "^2.3.2",
     "webpack-dev-server": "^2.4.2"
+  },
+  "dependencies": {
+    "request": "^2.81.0"
   }
 }
