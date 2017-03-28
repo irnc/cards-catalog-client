@@ -31,10 +31,15 @@ function handeResponse(response) {
     });
 }
 
-module.exports = function getData() {
-    return fetch('http://localhost:3000/cards')
-    .then(handeResponse)
-    .catch(function(err) {
+module.exports = async function getData() {
+    let data;
+
+    try {
+        const response = await fetch('http://localhost:3000/cards');
+        data = await handeResponse(response);
+    } catch (err) {
         console.log('Fetch Error :-S', err);
-    });
+    }
+
+    return data;
 }
