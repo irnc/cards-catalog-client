@@ -1,3 +1,5 @@
+//require("babel-core").transform("code", options);
+
 const getData = require('./getData.js');
 
 const dataPromise = getData();
