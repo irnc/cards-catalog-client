@@ -1,19 +1,7 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
-
-function Card(props) {
-    return (
-        <div className="card">
-            <img src={props.imageUrl} />
-            <h1>{props.name}</h1>
-            <ul>
-                <li>Phone: {props.contacts.phone}</li>
-                <li>Email: {props.contacts.email}</li>
-            </ul>
-        </div>
-    );
-}
+import Card from './components/Card';
 
 var cards = [
     {
