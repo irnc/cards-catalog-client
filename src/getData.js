@@ -12,7 +12,7 @@ function handeResponse(response) {
 
 module.exports = async function getData() {
     let data;
-
+    
     try {
         const response = await fetch('http://localhost:3000/cards');
         data = await handeResponse(response);
